@@ -113,7 +113,7 @@ input[type=text] {
     font-size: large;
 }
 
-input[type=button] {
+input[type=submit] {
     cursor: pointer;
     width: 50%;
     margin: 5px;

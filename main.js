@@ -1,11 +1,19 @@
-const submit = document.getElementById('submit');
+const form = document.querySelector('form');
 const searchInput = document.getElementById('searchInput');
 const resultContainer = document.getElementById('result');
-
-submit.addEventListener('click', searchBooks);
+form.addEventListener('submit', (e) =>
+{
+    e.preventDefault();
+    searchBooks();
+});
 
 async function searchBooks()
 {
+    if (!searchInput.value) {
+
+        alert("please type some thing");
+        return false;
+    }
     let resultHtml = '';
     let books = await fetchBooks();
 
