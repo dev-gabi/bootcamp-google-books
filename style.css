@@ -1,0 +1,153 @@
+
+/*responsive*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    float: right;
+    width: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+/*responsive end*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+img {
+    width: 128px;
+    height: auto;
+}
+
+.center {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.card {
+    border: 2px solid #fff;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.b-r5 {
+    border-radius: 5px;
+}
+
+.p-5 {
+    padding: 5px;
+}
+
+input[type=text] {
+    width: 30%;
+}
+
+    input[type=text]:focus {
+        outline: none;
+        animation: 1s focus forwards;
+    }
+
+.fs-large {
+    font-size: large;
+}
+
+input[type=button] {
+    cursor: pointer;
+    width: 50%;
+    margin: 5px;
+    background-color: coral;
+    color: #000;
+    border: none;
+}
+
+    input[type=button]:hover {
+        animation: 1s hover forwards;
+    }
+
+@keyframes hover {
+    from {
+        background-color: coral;
+    }
+
+    to {
+        background-color: chocolate;
+    }
+}
+
+@keyframes focus {
+    from {
+        width: 30%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .card {
+        height: 100%;
+    }
+}
